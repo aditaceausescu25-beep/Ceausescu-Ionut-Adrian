@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Explorer</title>
+    <!-- Legătura cu fișierul CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 1. Header cu numele site-ului și meniu de navigare internă -->
+    <header>
+        <h1>City Explorer</h1>
+        <nav>
+            <ul>
+                <li><a href="#destinatii">Destinații</a></li>
+                <li><a href="#planifica">Planifică</a></li>
+                <li><a href="#recomandari">Recomandări</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2. Secțiunea „Destinații” cu carduri și o destinație evidențiată (featured) -->
+        <section id="destinatii">
+            <h2>Destinații Populare</h2>
+            
+            <article class="card featured">
+                <h3>Lisabona</h3>
+                <p><strong>Țară:</strong> Portugalia</p>
+                <p>Un oraș vibrant plin de istorie, clădiri colorate și faimos pentru tramvaiele sale istorice.</p>
+                <p><strong>Durata recomandată a vizitei:</strong> 4 zile</p>
+            </article>
+
+            <article class="card">
+                <h3>Paris</h3>
+                <p><strong>Țară:</strong> Franța</p>
+                <p>Capitala Franței, recunoscută pentru Turnul Eiffel, muzeele de artă de renume mondial și cafenelele cochete.</p>
+                <p><strong>Durata recomandată a vizitei:</strong> 5 zile</p>
+            </article>
+
+            <article class="card">
+                <h3>Roma</h3>
+                <p><strong>Țară:</strong> Italia</p>
+                <p>Un adevărat muzeu în aer liber, plin de vestigii antice, inclusiv Colosseumul și Vaticanul.</p>
+                <p><strong>Durata recomandată a vizitei:</strong> 4 zile</p>
+            </article>
+
+            <article class="card">
+                <h3>Praga</h3>
+                <p><strong>Țară:</strong> Republica Cehă</p>
+                <p>Orașul celor o sută de clopotnițe, renumit pentru Podul Carol și atmosfera sa medievală unică.</p>
+                <p><strong>Durata recomandată a vizitei:</strong> 3 zile</p>
+            </article>
+
+            <article class="card">
+                <h3>Barcelona</h3>
+                <p><strong>Țară:</strong> Spania</p>
+                <p>O combinație perfectă între arhitectura modernistă a lui Antoni Gaudí, plaje însorite și viață de noapte dinamică.</p>
+                <p><strong>Durata recomandată a vizitei:</strong> 4 zile</p>
+            </article>
+        </section>
+
+        <!-- 3. Secțiunea „Planifică” cu formularul static -->
+        <section id="planifica">
+            <h2>Planifică Excursia</h2>
+            <form action="#" method="POST">
+                <label for="name">Nume</label>
+                <input id="name" name="name" type="text" required>
+
+                <label for="destination">Destinație</label>
+                <select id="destination" name="destination" required>
+                    <option value="">Alege...</option>
+                    <option value="Lisabona">Lisabona</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Roma">Roma</option>
+                    <option value="Praga">Praga</option>
+                    <option value="Barcelona">Barcelona</option>
+                </select>
+
+                <label for="days">Număr de zile</label>
+                <input id="days" name="days" type="number" min="1" required>
+
+                <button type="submit">Planifică excursia</button>
+            </form>
+        </section>
+
+        <!-- 4. Secțiunea „Recomandări” cu cel puțin 3 sfaturi/obiective -->
+        <section id="recomandari">
+            <h2>Recomandări de Călătorie</h2>
+            <ul>
+                <li>Verifică valabilitatea actelor de identitate și asigurarea medicală înainte de plecare.</li>
+                <li>Achiziționează bilete online în avans pentru obiectivele turistice majore pentru a evita cozile lungi.</li>
+                <li>Gustă preparatele culinare tradiționale locale în restaurante frecventate de localnici.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- 5. Footer cu numele autorului și anul -->
+    <footer>
+        <p>&copy; 2026 City Explorer. Autor: Numele Tău.</p>
+    </footer>
+</body>
+</html>
